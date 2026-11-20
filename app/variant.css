@@ -1,0 +1,75 @@
+:root {
+  --navigation-height: 138px;
+  --navy: #213a50;
+  --blue: #72501f;
+  --gold: #92703b;
+  --ink: #283a47;
+  --muted: #606363;
+  --paper: #fcf8f0;
+  --soft: #f1e8d8;
+  --rule: #d1c6b4;
+  --dark-rule: #61717e;
+  --on-dark: #fcf8f0;
+  --on-dark-muted: #e9dfcc;
+  --hover: #e9ddc9;
+  --disabled-ink: #65635d;
+  --disabled-fill: #e8dfcf;
+  --overlay: #1d2d3f8c;
+}
+html { color-scheme: light; }
+::selection { background: var(--navy); color: var(--paper); }
+.site-navigation-shell { background: var(--paper); }
+.masthead-inner { min-height: 88px; }
+.quick-navigation { border-bottom: 1px solid var(--navy); }
+.conference-hero { background: var(--paper); border-bottom: 1px solid var(--navy); padding-block: 48px 36px; }
+.conference-name { color: var(--blue); }
+.conference-hero h1 { font-weight: 400; letter-spacing: -.025em; }
+.hero-facts { padding-top: 24px; margin-top: 28px; border-top: 1px solid var(--rule); }
+.hero-countdown { border-top: 0; padding-top: 0; }
+.countdown { gap: 32px; }
+.countdown b { font-size: 32px; }
+.quote-section { background: var(--soft); border-bottom-color: var(--navy); }
+.quote-section blockquote { font-size: 20px; }
+.quote-section figcaption { color: var(--blue); }
+.topics-section { background: var(--paper); }
+.topics-grid { gap: 16px; }
+.topic { padding: 20px; border: 1px solid var(--rule); background: var(--soft); }
+.agenda-section { background: var(--soft); }
+.agenda-toolbar { padding-bottom: 16px; border-bottom: 1px solid var(--rule); }
+.agenda-group { padding: 16px 20px 8px; background: var(--paper); border-top: 2px solid var(--navy); }
+.agenda-group-title { border-color: var(--rule); }
+.agenda-row { padding-block: 14px; }
+.session-time b { color: var(--blue); }
+.session-break, .session-networking { background: var(--soft); }
+.session-title { font-weight: 500; }
+.view-switch { border-color: var(--navy); border-radius: 24px; overflow: clip; }
+.view-switch button { padding-inline: 20px; background: var(--paper); }
+.view-switch button[aria-pressed=true] { background: var(--navy); }
+.questions-section { background: var(--navy); }
+.vernissage-section { background: var(--paper); border-bottom: 1px solid var(--navy); }
+.information-section { background: var(--paper); }
+.information-grid article { border-top-color: var(--gold); }
+.venue-section { background: var(--soft); border-top: 1px solid var(--rule); }
+.conference-footer { background: var(--paper); }
+.detail-dialog { border-radius: 12px; border-color: var(--navy); }
+.dialog-toolbar { background: var(--soft); }
+.dialog-close { border-radius: 50%; background: var(--paper); }
+.speaker-portrait { border-radius: 4px; overflow: clip; }
+.navigation-group h2, .navigation-group-toggle { color: var(--blue); }
+.navigation-group-links a { border-bottom-color: var(--rule); }
+@media (max-width: 899px) {
+  :root { --navigation-height: 73px; }
+  .masthead-inner { min-height: 72px; }
+}
+@media (max-width: 599px) {
+  .conference-hero { padding-block: 28px; }
+  .hero-facts { padding-top: 20px; margin-top: 24px; }
+  .hero-countdown { border-top: 1px solid var(--rule); margin-top: 24px; padding-top: 16px; }
+  .countdown { gap: 16px; }
+  .countdown b { font-size: 28px; }
+  .quote-section blockquote { font-size: 17px; }
+  .topics-grid { gap: 12px; }
+  .topic { padding: 16px; }
+  .agenda-group { padding-inline: 12px; }
+  .agenda-row { padding-block: 12px; }
+}
